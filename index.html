@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> QA Organisation - Practice Resources</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+          body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            padding: 30px;
+            margin: 0 auto 20px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img {
+            max-width: 100px; /* Or whatever maximum size you want */
+            height: auto;
+        }
+        .initial-content {
+            margin-bottom: 30px;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .initial-content.hidden {
+            display: none;
+            opacity: 0;
+        }
+        .phishing-alert {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            padding: 25px;
+            background: #fff3cd;
+            border: 2px solid #ffeeba;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .phishing-alert.visible {
+            opacity: 1;
+        }
+        .stats {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        .highlight {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .button {
+            background: #0056b3;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background: #003d82;
+        }
+        .button:disabled {
+            background: #dc3545;
+            cursor: not-allowed;
+        }
+        .lessons {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .lessons li {
+            margin: 10px 0;
+        }
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 3px solid #0056b3;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+       </style> 
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="" alt="QA Organisation logo"/>
+        </div>
+
+    <div id="initialContent" class="initial-content">
+        <h1>QA Organisation resources</h1>
+        <p>Loading shared practice resources....</p>
+        <div class="loading"></div>
+    </div> 
+    
+    <div id="phishingAlert" class="phising-alert">
+        <h2>🎯 Gotcha! This was a Security Awareness Test
+        </h2>
+        <div class="stats">
+            <p>Your IP Address: <span id='ipAddress' class="highlight">Loading...</span></p>
+            <p>Your visitor number <span id='visitorCount' class="highlight">0</span></p>
+            <p>Access Time: <span id="accessTime" class="highloight">Loading...</span></p>
+        </div>
+
+        <h3>⚠️ In a real phishing attempt, you could have:</h3>
+        <ul class="lessons">
+            <li>Exposed your credentials to attackers</li>
+            <li>Downloaded malware to your device</li>
+            <li>Compromised company data</li>
+            <li>Given attackers access to internal systems</li>
+        </ul>
+
+        <h3>🔍 What you should have noticed:</h3>
+        <ul class="lessons">
+            <li>Did you verify the sender's email address?</li>
+            <li>Did you hover over the link to check its actual destination?</li>
+            <li>Did you question why you needed to accept an invite for internal resources?</li>
+            <li>Where you influenced by the artificial time pressure (24 hour limit)?</li>
+        </ul>
+
+        <p class="highlight">Remember, take a moment to verify before you click. When in doubt, contact your IT department or the person in question.</p>
+    </div>
+    <button id="accessButton" class="button">Access resources</button>
+    </div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> QA Organisation - Practice Resources</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+          body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            padding: 30px;
+            margin: 0 auto 20px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img {
+            max-width: 100px; /* Or whatever maximum size you want */
+            height: auto;
+        }
+        .initial-content {
+            margin-bottom: 30px;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .initial-content.hidden {
+            display: none;
+            opacity: 0;
+        }
+        .phishing-alert {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            padding: 25px;
+            background: #fff3cd;
+            border: 2px solid #ffeeba;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .phishing-alert.visible {
+            opacity: 1;
+        }
+        .stats {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        .highlight {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .button {
+            background: #0056b3;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background: #003d82;
+        }
+        .button:disabled {
+            background: #dc3545;
+            cursor: not-allowed;
+        }
+        .lessons {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .lessons li {
+            margin: 10px 0;
+        }
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 3px solid #0056b3;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+       </style> 
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="" alt="QA Organisation logo"/>
+        </div>
+
+    <div id="initialContent" class="initial-content">
+        <h1>QA Organisation resources</h1>
+        <p>Loading shared practice resources....</p>
+        <div class="loading"></div>
+    </div> 
+    
+    <div id="phishingAlert" class="phising-alert">
+        <h2>🎯 Gotcha! This was a Security Awareness Test
+        </h2>
+        <div class="stats">
+            <p>Your IP Address: <span id='ipAddress' class="highlight">Loading...</span></p>
+            <p>Your visitor number <span id='visitorCount' class="highlight">0</span></p>
+            <p>Access Time: <span id="accessTime" class="highloight">Loading...</span></p>
+        </div>
+
+        <h3>⚠️ In a real phishing attempt, you could have:</h3>
+        <ul class="lessons">
+            <li>Exposed your credentials to attackers</li>
+            <li>Downloaded malware to your device</li>
+            <li>Compromised company data</li>
+            <li>Given attackers access to internal systems</li>
+        </ul>
+
+        <h3>🔍 What you should have noticed:</h3>
+        <ul class="lessons">
+            <li>Did you verify the sender's email address?</li>
+            <li>Did you hover over the link to check its actual destination?</li>
+            <li>Did you question why you needed to accept an invite for internal resources?</li>
+            <li>Where you influenced by the artificial time pressure (24 hour limit)?</li>
+        </ul>
+
+        <p class="highlight">Remember, take a moment to verify before you click. When in doubt, contact your IT department or the person in question.</p>
+    </div>
+    <button id="accessButton" class="button">Access resources</button>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            //Get incrememnted visitor count
+            let count =localStorage.getItem('visitorCount') || 0; 
+            count = parseInt(count) + 1.
+            localStorage.setItem('visitorCount', count);
+            
+            //Get current time
+            const now = new Date ().toLocaleString();
+
+            //Fetch the IP address
+            $.getJSON('https://api.ipify.org?format=json', function(data){
+                $('#ipAddress').text(data.ip);
+            }).fail(function() {
+                $('#ipAddress').text('Not available!');
+            });
+            $('#visitorCount').text(count);
+            $('accessTime').text(now);
+
+            //Handle Button click with proper animations
+            $('accessButton').click (function(){
+                const button = $(this);
+                const initialContent = $('initialContent');
+                const phishingAlert = $('phishingAlert');
+
+                //Disable button
+                button.prop('diasbled', true).text('Access Denied');
+
+                //Fadeout initial content
+                initialContent.fadeOut(500, function(){
+                // Add hidden class after fadeout
+                initialContent.addClass('hidden');
+
+                //Show and fade in phishing alert
+                phishingAlert.show().addClass('visible');
+            })
+
+            })
+        })
+    </script>
+</body>
+</head>
+</html>
+
+
+    <script>
+        $(document).ready(function(){
+            //Get incrememnted visitor count
+            let count =localStorage.getItem('visitorCount') || 0; 
+            count = parseInt(count) + 1.
+            localStorage.setItem('visitorCount', count);
+            
+            //Get current time
+            const now = new Date ().toLocaleString();
+
+            //Fetch the IP address
+            $.getJSON('https://api.ipify.org?format=json', function(data){
+                $('#ipAddress').text(data.ip);
+            }).fail(function() {
+                $('#ipAddress').text('Not available!');
+            });
+            $('#visitorCount').text(count);
+            $('accessTime').text(now);
+
+            //Handle Button click with proper animations
+            $('accessButton').click (function(){
+                const button = $(this);
+                const initialContent = $('initialContent');
+                const phishingAlert = $('phishingAlert');
+
+                //Disable button
+                button.prop('diasbled', true).text('Access Denied');
+
+                //Fadeout initial content
+                initialContent.fadeOut(500, function(){
+                // Add hidden class after fadeout
+                initialContent.addClass('hidden');
+
+                //Show and fade in phishing alert
+                phishingAlert.show().addClass('visible');
+            })
+
+            })
+        })
+    </script>
+</body>
+</head>
+</html>
